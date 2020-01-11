@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cabecalho_texto">24sp</dimen>
+    <dimen name="texto_numero">30</dimen>
+</resources>
