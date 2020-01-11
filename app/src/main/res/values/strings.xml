@@ -2,4 +2,5 @@
     <string name="app_name">Adivinha</string>
     <string name="btn_jogar">Jogar</string>
     <string name="texto_numero">Nenhum número</string>
+    <string name="action_settings">Settings</string>
 </resources>
