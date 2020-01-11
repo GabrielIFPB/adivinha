@@ -5,13 +5,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button btn_jogar;
+    private TextView resultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.btn_jogar = findViewById(R.id.btn_jogar_id);
+        this.resultado = findViewById(R.id.resultado_id);
+
+//        this.resultado.setText("Texto alterado");
+        this.btn_jogar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Random random = new Random();
+                int numero = random.nextInt(11);
+                resultado.setText("Número escolhido: " + numero);
+            }
+        });
     }
 
     @Override
